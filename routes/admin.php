@@ -16,7 +16,6 @@ $api->version('v1',$params, function($api){
              * 资源路由，自动创建对应资源控制器默认方法路由
              * 详细路由表使用php artisan api:routes查看
              */
-
             //资源路由
             $api->resource('users', \App\Http\Controllers\Admin\UserController::class, [
                 'only' => ['index', 'show'],  //仅使用的路由
